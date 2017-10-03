@@ -1,0 +1,499 @@
+/*
+|--------------------------------------------------------------------------
+| Global Styles
+|--------------------------------------------------------------------------
+*/
+.container { padding: 25px 0; }
+
+.size-36 { font-size: 36px; }
+
+html, body { font-family: 'Ubuntu', sans-serif;
+    color: #242729;
+    font-size: 14px; }
+
+.input-holder { padding: 15px 0; }
+
+.padding-zeroed { padding: 0; }
+.hidden { display: none; }
+/*End Global Styles*/
+
+/*
+|--------------------------------------------------------------------------
+| Preventing flash of unstyled content (FOUC)
+|--------------------------------------------------------------------------
+*/
+.no-js .top-bar {
+    display: none; }
+@media screen and (min-width: 40em) {
+    .no-js .top-bar {
+        display: block; }
+
+    .no-js .title-bar {
+        display: none; } }
+/*End Preventing flash of unstyled content (FOUC)*/
+
+/*
+|--------------------------------------------------------------------------
+| Foundation CSS style overrides
+|--------------------------------------------------------------------------
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { font-family: "Ubuntu", Helvetica, Roboto, Arial, sans-serif; }
+.top-bar { padding: 3px; }
+.top-bar, .top-bar ul {
+    background: none; }
+.top-bar input {
+    height: 30px; }
+
+.button-group .button {
+    margin-right: 3px; }
+.button {
+    color: #FFF;
+    background-color: #f69c55;
+    border-color: #d18141;
+    box-shadow: inset 0 1px 0 #e0d7d1; }
+.button:hover, .button:focus {
+    color: rgba(255,255,255,0.9);
+    background-color: #eb7e28;
+    box-shadow: inset 0 1px 0 #e0d7d1; }
+
+.column:last-child:not(:first-child), .columns:last-child:not(:first-child) {
+    float: left; }
+
+.pagination li {
+    font-size: 0.975rem;
+    margin-right: 0.0625rem;
+    border-radius: 0;
+    border: 1px solid #e2e2e2; }
+.pagination li.active {
+    background-color: #f69c55;
+    color: #fff;
+    border: none;
+    padding: 0.1875rem 0.625rem;
+    border-radius: 0; }
+.pagination a:hover { background-color: #2d2e2f; color: #fff; border: none}
+
+.dropdown.menu > li.opens-left > .is-dropdown-submenu {
+    left: 0;
+    right: auto;
+    top: 100%; }
+
+.has-tip:hover { cursor: pointer; }
+.has-tip:focus { outline: none; }
+.no-border { border-bottom: none; }
+
+.label { border-radius: 2px; }
+[type='text'],
+[type='password'],
+[type='date'],
+[type='datetime'],
+[type='datetime-local'],
+[type='month'],
+[type='week'],
+[type='email'],
+[type='number'],
+[type='search'],
+[type='tel'],
+[type='time'],
+[type='url'],
+[type='color'],
+textarea {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+/*End Foundation CSS style overrides*/
+
+/*
+|--------------------------------------------------------------------------
+| Menu
+|--------------------------------------------------------------------------
+*/
+#main-menu {
+    background: rgba(12,13,14,0.86); }
+#main-menu li,
+#main-menu li.menu-text,
+#main-menu li a {
+    color: #e4e6e8; }
+#main-menu li.menu-text a { padding: 0; }
+#main-menu li a {
+    font-size: 12px; }
+#main-menu .help-infos .is-dropdown-submenu { background: #fff; border-top: none; }
+#main-menu .help-infos li a { color: #0077cc; }
+#main-menu .help-infos li a > span { display: block; color: #2f3337; }
+#main-menu .help-infos form.logout button {
+    padding: 0.7rem 1rem;
+    font-size: 12px;
+    color: #0077cc; }
+#main-menu li.has-submenu:hover { background: #fff; }
+#main-menu li.has-submenu:hover > a { color: #000; }
+
+.top-bar-left .dropdown.menu > li.is-dropdown-submenu-parent > a::after,
+.top-bar-right .dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+    border-color: #e2e2e2 transparent transparent; }
+.top-bar-right .searchQA { margin-left: 12px; }
+.top-bar-right .searchQA input[type='search'] { margin-right: 0; border-radius: 2px; }
+/*End Menu*/
+
+/*
+|--------------------------------------------------------------------------
+| Button Links
+|--------------------------------------------------------------------------
+*/
+#Header { padding: 30px 0; }
+#SiteLogo img { max-width: 200px; }
+#LinkGroups a {
+    background: #9fa6ad;
+    font-size: 12px;
+    border: none;
+    box-shadow: none;
+    border-radius: 2px; }
+#LinkGroups a:hover,
+#LinkGroups a.highlighted { background: #f69c55; }
+#LinkGroups { width: auto; }
+/*End Button Links*/
+
+/*
+|--------------------------------------------------------------------------
+| Question List
+|--------------------------------------------------------------------------
+*/
+#QuestionList { padding: 10px; }
+.header-title h2 { font-size: 20px; }
+.header-title-tabs { border-bottom: 1px solid #e2e2e2; }
+.question-list-tabs .tabs { border: 0; }
+.question-list-tabs .tabs li a { padding: 13px; color: #848d95; }
+.question-list-tabs .tabs li { border: 1px solid transparent; }
+.question-list-tabs .tabs li.is-active {
+    border-color: #e2e2e2;
+    border-top: 2px solid #f69c55;
+    border-bottom: 1px solid transparent;
+    position: relative;
+    top: 1px;
+    background: #fff; }
+.question-list-tabs .tabs li.is-active a { color: #333; }
+.question { padding: 15px 10px; border-bottom: 1px solid #e2e2e2; }
+.question .counts h3 { font-size: 17px; margin-bottom: 0; }
+.question .count-label { font-size: 0.8em; }
+.question .count-container { color: #6a737c; }
+.question .count-container.answer-count {
+    padding: 0;
+    border: 1px solid #45A163;
+    color: #45A163; }
+.question .question-title { display: block; margin-bottom: 10px; }
+
+.tags { display: inline-block; }
+.tags span.label { background-color: #cee0ed; color: #33658a; margin-right: 3px; }
+.tags span.label a { color: inherit; font-weight: 500; }
+.tags span.label.same-with-selected-tag {
+    background-color: #605d5d;
+    color: #fff; }
+.tags.selected-tag .label { background-color: #333; }
+.tags.selected-tag .label a { color: #fff; font-size: 18px; }
+
+/* if at least 1 of the user's tags are in question's tags*/
+.has-favorite-tag { background: #fffbec; }
+
+/*End Question List*/
+
+/*
+|--------------------------------------------------------------------------
+| Tagged Question
+|--------------------------------------------------------------------------
+*/
+.question .question-desc { font-size: 14px; }
+/*End Tagged Question*/
+
+/*
+|--------------------------------------------------------------------------
+| Tags List
+|--------------------------------------------------------------------------
+*/
+.tag-description { padding: 10px 0; }
+.tag-locator { display: inline-block; width: auto; }
+.tags-list {
+    font-size: 12px;
+    padding: 12px; }
+.tags-list .tag-description { color: #858C93; }
+.tags-list .tag-asked-count { font-size: 11px; color: #3C3F44; }
+.tags-list .tag-asked-count a {
+    text-decoration: underline;
+    font-weight: normal; }
+/*End Tag List*/
+
+/*
+|--------------------------------------------------------------------------
+| Users List
+|--------------------------------------------------------------------------
+*/
+.users-list { font-size: 12px; padding-bottom: 25px; color: #858C93; }
+.users-list .user { padding-top: 10px; padding-bottom: 10px; }
+.users-list .user-infos > span { display: block; }
+.users-list .user-infos-name {}
+.users-list .user-infos-addr {}
+.users-list .user-infos-repo {}
+.users-list .user-infos-tags ul { margin: 0; }
+.users-list .user-infos-tags ul li {
+    list-style: none;
+    display: inline-block; }
+.users-list .user-infos-tags ul li a { display: inline-block;
+    color: #858C93; text-decoration: underline; }
+.users-list .user-infos-tags ul li a:hover { text-decoration: underline; }
+.user-infos-name a { font-size: 13px; }
+/*End Users List*/
+
+/*
+|--------------------------------------------------------------------------
+|  Sidebar
+|--------------------------------------------------------------------------
+*/
+#Sidebar .hot-questions { background-color: #FFF8DC; padding: 10px; border: 1px solid #E0DCBF; }
+#Sidebar .hot-questions ul { margin: 0; list-style: none; }
+#Sidebar .hot-questions li a { font-size: 13px; }
+#Sidebar .question-extra-details { font-size: 14px; }
+#Sidebar .question-extra-details-label { color: #9199a1; }
+#Sidebar .tag-num-questions { margin-bottom: 0; }
+#Sidebar .tag-num-questions-label { font-size: 12px; }
+
+.tag-holder { padding: 10px 0; }
+.multiplier-count { margin-left: 5px; font-size: 11px; color: #6a737c; background: none; }
+.multiplier-count a { color: #858C93; text-decoration: underline; }
+
+.related-questions { padding: 10px; }
+.related-questions ul { margin: 0; }
+.related-questions ul li { padding: 10px 0; list-style-type: none; }
+.related-questions a.show-all-related {  }
+/*End Sidebar*/
+
+/*
+|--------------------------------------------------------------------------
+|  Question View
+|--------------------------------------------------------------------------
+*/
+.question-header { border-bottom: 1px solid #e4e6e8; }
+.question-header h1 {
+    font-size: 24px;
+    line-height: 1.35;
+    font-weight: normal;
+    margin-bottom: .5em; }
+.question-header h1 a { color: #242729; }
+
+.vote-action .question-upvote,
+.vote-action .question-downvote,
+.vote-action .question-star,
+.vote-action .answer-upvote,
+.vote-action .answer-downvote,
+.vote-action .answer-star {  color: #858c93; }
+.vote-action .question-star .fi-star,
+.answer-accept .fi-check {  color: #d7d9db; }
+.answer-accept .fi-check.accepted-answer { color: #65be71; }
+.question-star .fi-star.is-favorite { color: #f69c55; }
+.question-star .question-favor-count { display: block; }
+.question-details-wrap {}
+.question-details-wrap .question-desc {
+    margin-bottom: 5px;
+    word-wrap: break-word;
+    font-size: 15px;
+    line-height: 1.3; }
+.answer-wrapper {
+    padding: 10px;
+    border-bottom: 1px solid #eff0f1; }
+.question-action { padding: 10px 0; }
+.question-action a { font-size: 14px; color: #858c93; }
+.question-action a:hover { color: #333; }
+.comment-answer a,
+.question-action a { color: #858c93; font-size: 12px; }
+.asker { background: #E0EAF1; color: #858c93; padding: 10px; font-size: 12px;  }
+.asker .question-date-asked,
+.asker .question-date-answered { padding: 5px; }
+.asker .stats>div { padding: 5px; }
+
+.comment-list {
+    font-size: 13px;
+    margin-top: 10px;
+    padding: 10px;
+    border-top: 1px solid #e4e6e8;}
+.comment-list .comment-votes .row > div { width: 33.33%; text-align: center; }
+.comment-list .answer { border-bottom: 1px solid #eff0f1; margin: 10px 0; }
+.comment-list .comment-text p {
+    padding: 6px 6px 6px 0;
+    vertical-align: top;
+    line-height: 1.3;
+    margin-bottom: 0; }
+.comment-list .comment-time-elapsed { color: #9199a1;}
+
+.must-logged-in-before-post {
+    padding: 20px;
+    background-color: #FFF8DC;
+    margin-bottom: 1rem; }
+.must-logged-in-before-post p { font-weight: bold; font-size: 15px; margin: 0; }
+/*End Question View*/
+
+/*
+|--------------------------------------------------------------------------
+|  Ask/Answer Form
+|--------------------------------------------------------------------------
+*/
+#AnswerForm h2 { font-size: 20px; }
+#AnswerForm #answer-submit,
+#AskForm label { font-weight: bold; }
+#AskForm input, #AskForm textarea { font-weight: normal; }
+
+.ask-question-instructions {
+    border: 1px solid #e2e2e2;
+    padding: 20px;
+    color: #333;
+    font-weight: bold; }
+
+.ask-question-how-to { background: #FFF8DC; padding: 15px; }
+/*End Ask/Answer Form*/
+
+/*
+|--------------------------------------------------------------------------
+|  update-user
+|--------------------------------------------------------------------------
+*/
+.update-user .success-update-msg { color: #91e458; }
+#EditUserForm {}
+/*End update-user*/
+
+/*
+|--------------------------------------------------------------------------
+|  Login/Register/Comment Form
+|--------------------------------------------------------------------------
+*/
+.login-register-header { padding: 25px; font-size: 20px; }
+.login-form, .register-form { padding: 1em 0; }
+.comment-form { margin-top: 12px; }
+.comment-form textarea { max-width: 100%; }
+.login-form label,
+.register-form label { font-size: 14px; }
+.auth-options { padding: 1em 0; }
+/*End Login/Register/Comment Form*/
+
+/*
+|--------------------------------------------------------------------------
+|  Suggestions
+|--------------------------------------------------------------------------
+*/
+.suggestions {}
+.suggestions p { display: inline-block; }
+.suggestions .tags { margin-left: 10px; }
+/*End Suggestions*/
+
+/*
+|--------------------------------------------------------------------------
+|  Form Error
+|--------------------------------------------------------------------------
+*/
+.hasError .help-block { color: red; }
+.hasError .error-input { border: 1px solid red; }
+.hasError .help-block .error-helper-suggest { color: #333; }
+/*End Form Error*/
+
+/*
+|--------------------------------------------------------------------------
+|  mustLoggedInModal
+|--------------------------------------------------------------------------
+*/
+#mustLoggedInModal { border-top: 3px solid #f69c55; }
+#mustLoggedInModal h1 { font-size: 20px; font-weight: bold }
+/*End mustLoggedInModal*/
+
+/*
+|--------------------------------------------------------------------------
+|  User Profile
+|--------------------------------------------------------------------------
+*/
+.summary .count {
+    color: #999; }
+.summary .header-title h2 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #242729; }
+.summary .header-title h2 .count { font-weight: normal; }
+.summary ul li {font-size: 14px;}
+.mini-count {
+    color: #6a737c;
+    font-size: 12px;
+    width: 30px;
+    display: inline-block;
+    margin-right: 5px;
+    padding: 0 5px; text-align: center;
+    background: #eff0f1;
+    border-radius: 2px; }
+.mini-count.answered { background: #5fba7d; color: #fff; font-weight: normal; }
+.summary .mini-count.fi-star { border: 0; color: #fff; background: #f69c55; }
+.user-questions .user-questions-list ul,
+.user-answers .user-answers-list ul,
+.user-favs .user-favs-list ul { list-style: none; }
+.user-votes .user-votes-list .vote-count { margin-right: 10px; font-weight: bold; font-size: 21px; }
+.user-stats { font-size: 12px; color: #666; }
+.user-stats .answers-count,
+.user-stats .questions-count {
+    color: #333;
+    font-size: 21px;
+    font-weight: bold;
+    margin-bottom: 0; }
+.user-stats .label { background: #666; border-left: 2px solid #f69c55; }
+/*End User Profile*/
+
+.favorite-tags { padding-bottom: 10px; }
+.favorite-tags .toggler a { font-size: 12px; }
+.favorite-tags span.label {
+    margin-right: 8px;
+    margin-bottom: 8px;
+    background: #cee0ed;
+    color: #33658a;
+    padding: 6px; }
+.favorite-tags span.label a { color: #33658a; font-size: 12px; }
+.favorite-tags span.label i.fi-x {
+    margin-right: 5px;
+    font-weight: 300; }
+.favorite-tags span.label i.fi-x:hover { cursor: pointer; }
+.favorite-tags span.label:hover { background: #bedaef; }
+.favorite-tags .select2-container { width: 100% !important; }
+.favorite-tags .select2-container--default.select2-container--focus .select2-selection--multiple { border: solid #35668b 1px; }
+.favorite-tags .select2-results__option { font-size: 12px; }
+.favorite-tags .user-fav-tags { padding: 5px 0; }
+.favorite-tags .note {
+    color: #6f7275;
+    font-weight: 300;
+    font-size: 13px; }
+
+/*
+|--------------------------------------------------------------------------
+|  End select2 css overrides
+|--------------------------------------------------------------------------
+*/
+.select2-search__field { height: 0;}
+/*End select2 css overrides*/
+
+
+/*Favorite tags*/
+
+
+/*
+|--------------------------------------------------------------------------
+|  Footer
+|--------------------------------------------------------------------------
+*/
+#SiteFooter {
+    background: rgba(12,13,14,0.86);
+    font-size: 12px;
+    color: #9fa6ad;
+    border-top: 3px solid #f69c55; }
+#SiteFooter h3,
+#SiteFooter h4 {
+    font-size: 1.5em;
+    text-transform: uppercase; }
+#SiteFooter a { color: #9fa6ad; }
+#SiteFooter a:hover { color: #fff; text-decoration: underline; }
+#SiteFooter a.button { color: #fff;  }
+/*End Footer*/
+
+[v-cloak] { display: none; }

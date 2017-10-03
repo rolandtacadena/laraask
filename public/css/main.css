@@ -176,7 +176,7 @@ textarea {
     top: 1px;
     background: #fff; }
 .question-list-tabs .tabs li.is-active a { color: #333; }
-.question { padding: 15px 10px; border-bottom: 1px solid #e2e2e2; }
+.question { padding: 15px 10px; margin-bottom: 5px; border-radius: 3px; }
 .question .counts h3 { font-size: 17px; margin-bottom: 0; }
 .question .count-label { font-size: 0.8em; }
 .question .count-container { color: #6a737c; }

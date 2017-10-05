@@ -14,7 +14,9 @@ class QuestionsTableSeeder extends Seeder
     public function run()
     {
          factory(Question::class, 100)->create()->each(function ($question) {
-             $question->tags()->attach(range(1, Tag::count()));
+            $tagIds = Tag::pluck('id')->toArray();
+            $randomKey = array_rand($tagIds);
+            $question->tags()->attach($tagIds[$randomKey]);
          });
     }
 }

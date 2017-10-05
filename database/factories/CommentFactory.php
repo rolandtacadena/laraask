@@ -4,9 +4,9 @@ use Faker\Generator as Faker;
 
 $factory->define(\App\Comment::class, function (Faker $faker) {
     return [
-        'commenter_id' => $faker->numberBetween(1, 10),
-        'commentable_id' => $faker->numberBetween(1, 100),
-        'commentable_type' => rand(0, 1) == 1 ? 'App\Question' : 'App\Answer',
+        'commenter_id' => $faker->randomElement(\App\User::pluck('id')->toArray()),
+        'commentable_id' => $faker->randomElement(\App\Answer::pluck('id')->toArray()),
+        'commentable_type' => 'App\Answer',
         'body' => $faker->sentence(2)
     ];
 });

@@ -14,7 +14,9 @@ class UsersTableSeeder extends Seeder
     public function run()
     {
         factory(User::class, 100)->create()->each(function($user) {
-            $user->favoriteTags()->attach(range(1, Tag::count()));
+            $tagIds = Tag::pluck('id')->toArray();
+            $randomKey = array_rand($tagIds);
+            $user->favoriteTags()->attach($tagIds[$randomKey]);
 
         });
 

@@ -1,7 +1,7 @@
 <div id="Header" class="row">
     <div id="SiteLogo" class="float-left">
         <a href="{{ route('index') }}">
-            <img src="{{ asset('images/sitelogo.png') }}" alt="LaraAsk Logo">
+            <img src="/images/sitelogo.png" alt="LaraAsk Logo">
         </a>
     </div>
     <div id="LinkGroups" class="float-right">

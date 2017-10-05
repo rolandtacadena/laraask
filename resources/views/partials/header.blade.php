@@ -6,16 +6,16 @@
     @yield('page-specific-meta')
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ appName() }}</title>
-    <link rel="stylesheet" href="{{ asset('css/vendor/foundation.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/vendor/sweetalert.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/vendor/select2.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+    <link rel="stylesheet" href="/css/vendor/foundation.css">
+    <link rel="stylesheet" href="/css/vendor/sweetalert.css">
+    <link rel="stylesheet" href="/css/vendor/select2.min.css">
+    <link rel="stylesheet" href="/css/main.css">
 
     <!-- google font -->
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
 
     <!-- icons -->
-    <link rel="stylesheet" href="{{ asset('css/vendor/foundation-icons.css') }}">
+    <link rel="stylesheet" href="/css/vendor/foundation-icons.css">
 
     @yield('page-styles')
 

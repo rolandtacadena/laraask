@@ -108,6 +108,7 @@ textarea {
 }
 
 .off-canvas-wrapper { min-height: 100%; height: auto !important; }
+.off-canvas-content { box-shadow: none; }
 /*End Foundation CSS style overrides*/
 
 /*

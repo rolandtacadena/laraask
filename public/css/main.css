@@ -486,7 +486,10 @@ textarea {
     background: rgba(12,13,14,0.86);
     font-size: 12px;
     color: #9fa6ad;
-    border-top: 3px solid #f69c55; }
+    border-top: 3px solid #f69c55;
+    position: absolute;
+    width: 100%;
+    bottom: 0; }
 #SiteFooter h3,
 #SiteFooter h4 {
     font-size: 1.5em;

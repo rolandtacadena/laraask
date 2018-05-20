@@ -1,9 +1,9 @@
 <div id="Header" class="row">
-    <div id="SiteLogo" class="float-left">
-        <a href="{{ route('index') }}">
-            <img src="/images/sitelogo.png" alt="LaraAsk Logo">
-        </a>
-    </div>
+    {{--<div id="SiteLogo" class="float-left">--}}
+        {{--<a href="{{ route('index') }}">--}}
+            {{--<img src="/images/sitelogo.png" alt="LaraAsk Logo">--}}
+        {{--</a>--}}
+    {{--</div>--}}
     <div id="LinkGroups" class="float-right">
         <div class="small button-group">
             <a href="{{ route('all-questions') }}" class="button">Questions</a>

@@ -24,15 +24,17 @@
         @endif
 
         <li class="has-submenu help-infos">
-            <a href="#">help</a>
+            <a href="#">Help</a>
             <ul class="menu submenu vertical" data-submenu>
                 <li>
                     <a href="{{ route('how-it-works') }}">How it works
-                        <span>Start here for a quick overview of the site</span></a>
+                        <span>Start here for a quick overview of the site</span>
+                    </a>
                 </li>
                 <li>
                     <a href="{{ route('about') }}">About
-                        <span>Start here for a quick overview of the site</span></a>
+                        <span>Start here for a quick overview of the site</span>
+                    </a>
                 </li>
             </ul>
         </li>

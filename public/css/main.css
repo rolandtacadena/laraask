@@ -43,7 +43,7 @@ h3,
 h4,
 h5,
 h6 { font-family: "Ubuntu", Helvetica, Roboto, Arial, sans-serif; }
-.top-bar { padding: 3px; }
+.top-bar { padding: 10px; }
 .top-bar, .top-bar ul {
     background: none; }
 .top-bar input {
@@ -147,7 +147,7 @@ textarea {
 | Button Links
 |--------------------------------------------------------------------------
 */
-#Header { padding: 30px 0; }
+#Header { padding: 30px 0 0 0; }
 #SiteLogo img { max-width: 200px; }
 #LinkGroups a {
     background: #9fa6ad;
